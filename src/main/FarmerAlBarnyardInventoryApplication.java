@@ -11,6 +11,8 @@ public class FarmerAlBarnyardInventoryApplication {
 	public static void main(String[] args) {
 		// New solution
 		Animal[] animals = new Animal[5];
+		String[] names = {"Cow", "Pig", "Sheep", "Snorlax", "Snorlax 2"};
+		
 		Cow cow = new Cow();
 		animals[0] = cow;
 		Pig pig = new Pig();
@@ -22,10 +24,14 @@ public class FarmerAlBarnyardInventoryApplication {
 		Snorlax snorlax2 = new Snorlax("awake");
 		animals[4] = snorlax2;
 		
+		int i = 0;
+		
 		for (Animal a : animals) {
+			System.out.println(names[i] + ":");
 			a.animalSound();
 			a.sleep();
 			System.out.println();
+			i++;
 		}
 		
 		
