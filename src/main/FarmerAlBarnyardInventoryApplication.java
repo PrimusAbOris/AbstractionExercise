@@ -10,19 +10,14 @@ public class FarmerAlBarnyardInventoryApplication {
 
 	public static void main(String[] args) {
 		// New solution
-		Animal[] animals = new Animal[5];
-		String[] names = {"Cow", "Pig", "Sheep", "Snorlax", "Snorlax 2"};
-		
 		Cow cow = new Cow();
-		animals[0] = cow;
 		Pig pig = new Pig();
-		animals[1] = pig;
 		Sheep sheep = new Sheep();
-		animals[2] = sheep;
 		Snorlax snorlax = new Snorlax();
-		animals[3] = snorlax;
 		Snorlax snorlax2 = new Snorlax("awake");
-		animals[4] = snorlax2;
+		
+		Animal[] animals = {cow, pig, sheep, snorlax, snorlax2};
+		String[] names = {"Cow", "Pig", "Sheep", "Snorlax", "Snorlax 2"};
 		
 		int i = 0;
 		
