@@ -1,10 +1,6 @@
 package main;
 
-import animals.Animal;
-import animals.Cow;
-import animals.Pig;
-import animals.Sheep;
-import animals.Snorlax;
+import animals.*;
 
 public class FarmerAlBarnyardInventoryApplication {
 
@@ -12,8 +8,9 @@ public class FarmerAlBarnyardInventoryApplication {
 		// New solution
 		
 		Animal[] animals = {new Cow(), new Pig(), new Sheep(),
-				new Snorlax(), new Snorlax("awake")};
-		String[] names = {"Cow", "Pig", "Sheep", "Snorlax", "Snorlax 2"};
+				new Snorlax(), new Snorlax("awake"), new Articuno()};
+		String[] names = {"Cow", "Pig", "Sheep", "Snorlax", "Borlax", "Articuno"};
+		Snorlax Borlax = (Snorlax)animals[4];
 		
 		int i = 0;
 		
@@ -24,5 +21,8 @@ public class FarmerAlBarnyardInventoryApplication {
 			System.out.println();
 			i++;
 		}
+
+		System.out.println(Snorlax.maxHP + " " + Borlax.maxHP + " " + Articuno.maxHP);
+		Articuno.sheerCold(8);
 	}
 }

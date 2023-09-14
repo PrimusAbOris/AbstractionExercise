@@ -1,7 +1,8 @@
 package animals;
 
-public class Snorlax extends Animal {
-	public boolean awake = false;
+public class Snorlax extends Pokemon {
+	boolean awake = false;
+	public static int maxHP = 524;
 	
 	public Snorlax () {
 		// default constructor
@@ -14,9 +15,8 @@ public class Snorlax extends Animal {
 	}
 	
 	public void animalSound() {
-		// he doesn't have a whole lot to say in his sleep
 		if (!awake) {
-			return;
+			System.out.println("Snooore...snooooore......");
 		} else {
 			System.out.println("SNOOOOORLAAAAAAAX!!");
 		}
