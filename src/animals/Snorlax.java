@@ -5,7 +5,8 @@ public class Snorlax extends Pokemon {
 	public static int maxHP = 524;
 	
 	public Snorlax () {
-		// default constructor
+		// blank constructor just in case
+		// you can also pass in an empty string
 	}
 	
 	public Snorlax (String in) {

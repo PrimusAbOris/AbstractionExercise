@@ -8,7 +8,7 @@ public class FarmerAlBarnyardInventoryApplication {
 		// New solution
 		
 		Animal[] animals = {new Cow(), new Pig(), new Sheep(),
-				new Snorlax(), new Snorlax("awake"), new Articuno()};
+				new Snorlax(""), new Snorlax("awake"), new Articuno()};
 		String[] names = {"Cow", "Pig", "Sheep", "Snorlax", "Borlax", "Articuno"};
 		Snorlax Borlax = (Snorlax)animals[4];
 		

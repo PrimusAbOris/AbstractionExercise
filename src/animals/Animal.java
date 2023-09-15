@@ -1,12 +1,20 @@
 package animals;
 
 public abstract class Animal {
-		
-	// We call an abstract method here to FORCE each class to make its own animal sound. 
-	// i.e Pig goes oink, Cow goes Moo....
+	/*
+	 * Knock knock.
+	 * 
+	 * Who's there?
+	 * 
+	 * Cow goes.
+	 * 
+	 * Cow goes who?
+	 * 
+	 * No, cow goes moo!
+	 */
 	public abstract void animalSound();
 	
-	// Animals however, all sleep
+	// All animals sleep the same way, for the purposes of this
 	public void sleep() {
 		System.out.println("ZzZzZzZz.....");
 	}
